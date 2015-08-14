@@ -3,44 +3,38 @@
 
 int main (void)
 {
-	int a,b,i,z;	
+	int valor1,valor2,operacion,resultado;
+	
 	printf ("Que operacion desea \n1 para Resta\n2 para Suma\n3 para Division\n4 para Multiplicacion");
-	scanf ("%d",&i);
+	scanf ("%d",&operacion);
 	printf ("Ingrese el primer valor a los cuales le desea hacer la operacion");
-	scanf ("%d",&a);
+	scanf ("%d",&valor1);
 	printf ("\nIngrese el segundo valor");
-        scanf ("%d",&b);
+	scanf ("%d",&valor2);
 
-swich (i)
-{
-	case 1:
-               z=resta(a,b);
-               break
+	swich (i)
+	{
+		case 1:
+			z=resta(valor1,valor2);
+			break;
 
-        case 2:
-               z=suma(a,b);
-               break
+		case 2:
+            z=suma(valor1,valor2);
+            break;
 
         case 3:
-               z=division(a,b);
-               break
+            z=division(valor1,valor2);
+            break;
 
         case 4:
-               z=multiplicacion(a,b);
-               break
-}
+            z=multiplicacion(valor1,valor2)
+			break;
+	}
 
-printf("El resultado de la operacion es: %d", z);
-
-
-
-
-
-
-
-
-
+	printf("El resultado de la operacion es: %d", z);
+	
+	return 0;
 } 
  
-return 0;
-}
+
+
